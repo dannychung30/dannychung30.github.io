@@ -1,4 +1,5 @@
 html, body {
+    margin: 0;
     font-family: 'Courier', Courier New, monospace;
     background: #D9D9D9;
 }
@@ -28,4 +29,12 @@ html, body {
     text-decoration: underline;
     position: relative;
     top: 5px;
+}
+
+#main {
+    height: 100vh;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
