@@ -1,1 +1,1 @@
-let nav = document.getElementsByClassName('nav');
+let nav = document.getElementById('nav');
