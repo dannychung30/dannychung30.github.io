@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.woff);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +11,7 @@
 
 html, body {
     margin: 0;
-    font-family: 'Courier', Courier New, monospace;
+    font-family: Montserrat;
     background: #D9D9D9;
 }
 
@@ -84,6 +89,3 @@ html, body {
         transform: translateX(0%) !important;
     }
 }
-
-
-
