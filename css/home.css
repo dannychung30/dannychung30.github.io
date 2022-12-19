@@ -11,7 +11,6 @@
 }
 
 html, body {
-    margin: 0;
     background: #D9D9D9;
 }
 
@@ -60,6 +59,31 @@ html, body {
     font-size: 30px;
 }
 
+svg {
+    /* slides in and fades in whole svg from bottom of page on page load */
+    animation: 1s ease-out 0s 1 slide_from_bottom, fadein 3s;
+}
+
+/* slides in from bottom of page */
+@keyframes slide_from_bottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* fades in  */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* smaller than desktop, bigger than mobile views */
 @media screen and (max-width: 1300px) {
     #nav {
@@ -92,8 +116,8 @@ html, body {
         display: block;
     }
     svg {
-        margin-top: 40%;
-        margin-bottom: 40%;
+        margin-top: 30%;
+        margin-bottom: 30%;
     }
 
     /* gets toggled when burger menu is clicked */
