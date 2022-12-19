@@ -1,5 +1,5 @@
 // when burger is clicked, navigation menu slides in from the right
-const right_nav = function () {
+function right_nav () {
     const burger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
     
@@ -8,7 +8,7 @@ const right_nav = function () {
     });
 }
 
-// calling right_nav function
+// calling all functions
 const home_page = function () {
     right_nav();
 }
