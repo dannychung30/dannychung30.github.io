@@ -4,6 +4,7 @@
 }
 
 * {
+    font-family: Montserrat;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -11,7 +12,6 @@
 
 html, body {
     margin: 0;
-    font-family: Montserrat;
     background: #D9D9D9;
 }
 
@@ -54,6 +54,14 @@ html, body {
 
 #hamburger {
     display: none;
+}
+
+#main-blob {
+    position: relative;
+}
+
+#welcome-message {
+    font-size: 30px;
 }
 
 /* smaller than desktop, bigger than mobile views */
