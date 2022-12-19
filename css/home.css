@@ -56,10 +56,6 @@ html, body {
     display: none;
 }
 
-#main-blob {
-    position: relative;
-}
-
 #welcome-message {
     font-size: 30px;
 }
@@ -68,6 +64,10 @@ html, body {
 @media screen and (max-width: 1300px) {
     #nav {
         width: 50%;
+    }
+    svg {
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 } 
 
@@ -90,6 +90,10 @@ html, body {
     #hamburger {
         cursor: pointer;
         display: block;
+    }
+    svg {
+        margin-top: 40%;
+        margin-bottom: 40%;
     }
 
     /* gets toggled when burger menu is clicked */
