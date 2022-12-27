@@ -74,7 +74,7 @@ svg {
     }
 }
 
-/* fades in  */
+/* fades in */
 @keyframes fadein {
     from {
         opacity: 0;
@@ -105,11 +105,15 @@ svg {
         display: flex;
         flex-direction: column;
         right: 0px;
-        width: 30%;
+        width: 50%;
         height: 90vh;
         top: 10vh;
-        background-color: white;
+        backdrop-filter: blur(12px) saturate(95%);
+        -webkit-backdrop-filter: blur(12px) saturate(95%);
+        background-color: rgba(155, 155, 155, 0.67);
+        border: 1px solid rgba(209, 213, 219, 0.3);
         transform: translateX(100%);
+        transition: ease-in 0.3s;
     }
     #hamburger {
         cursor: pointer;
@@ -123,5 +127,12 @@ svg {
     /* gets toggled when burger menu is clicked */
     .burgerclicked {
         transform: translateX(0%) !important;
+    }
+    .fade-in-links {
+        animation: fadein 3s;
+    }
+    #nav li {
+        opacity: 0;
+        animation: fadein 5s;
     }
 }
