@@ -59,6 +59,10 @@ html, body {
     font-size: 30px;
 }
 
+.bio-message {
+    font-size: 12px;
+}
+
 svg {
     /* slides in and fades in whole svg from bottom of page on page load */
     animation: 1s ease-out 0s 1 slide_from_bottom, fadein 3s;
