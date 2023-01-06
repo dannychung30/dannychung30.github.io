@@ -3,9 +3,11 @@ function right_nav () {
     const burger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
     const nav_links = document.querySelectorAll('#nav li');
+    const svg = document.querySelector('svg');
     
     burger.addEventListener("click", () => {
         nav.classList.toggle('burgerclicked');
+        svg.classList.toggle('svg-hidden-when-burger-clicked');
     });
 }
 
