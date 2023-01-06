@@ -130,6 +130,9 @@ svg {
     }
 
     /* gets toggled when burger menu is clicked */
+    .svg-hidden-when-burger-clicked {
+        visibility: hidden;
+    }
     .burgerclicked {
         transform: translateX(0%) !important;
     }
