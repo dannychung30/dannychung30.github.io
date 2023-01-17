@@ -8,6 +8,7 @@ function right_nav () {
     burger.addEventListener("click", () => {
         nav.classList.toggle('burgerclicked');
         svg.classList.toggle('svg-hidden-when-burger-clicked');
+        // make body hidden instead of just svg so it can work for anything on the page
     });
 }
 
