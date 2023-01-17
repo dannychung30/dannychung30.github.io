@@ -35,6 +35,10 @@ html, body {
     list-style: none;
 }
 
+#nav li:hover {
+    text-decoration: underline;
+}
+
 #header a {
     font-weight: bold;
     color: rgb(23, 23, 23);
