@@ -68,7 +68,21 @@ html, body {
     column-gap: 20vh;
     flex-wrap: wrap;
     list-style: none;
-    
+}
+
+.project1 {
+    background-image: url('../images/portfolio-background.png');
+    background-size: cover;
+}
+
+.project2 {
+    background-image: url('../images/checkedout-background.png');
+    background-size: cover;
+}
+
+.project3 {
+    background-image: url('../images/bankstatement-background.png');
+    background-size: cover;
 }
 
 .projects li {
