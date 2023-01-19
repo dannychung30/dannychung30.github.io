@@ -72,11 +72,13 @@ html, body {
 }
 
 .projects li {
+    font-size: 1.5rem;
     word-wrap: break-word;
+    text-align: center;
     width: 75vh;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 10px;
+    height: 15vh;
+    background-color: lightgrey;
+    border-radius: 20px;
     padding: 10px;
 }
 
@@ -85,8 +87,23 @@ html, body {
     text-decoration: none;
 }
 
-.projects li:hover {
-    background-color: lightgrey;
+.portfolio-dropdown-content {
+    display: none;
+    position: relative;
+}
+
+.checkedout-dropdown-content {
+    display: none;
+    position: relative; 
+}
+
+.bankstatement-dropdown-content {
+    display: none;
+    position: relative; 
+}
+
+.hovered-projects {
+    display: block;
 }
 
 /* slides in from bottom of page */
