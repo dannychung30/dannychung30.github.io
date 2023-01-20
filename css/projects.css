@@ -70,30 +70,58 @@ html, body {
     list-style: none;
 }
 
-.project1 {
+.backgrounds {
+    overflow: auto;
+    position: relative;
+    width: 75vh;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.backgrounds::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.project1-background::before {
     background-image: url('../images/portfolio-background.png');
-    background-size: cover;
 }
 
-.project2 {
+.project2-background::before {
     background-image: url('../images/checkedout-background.png');
-    background-size: cover;
 }
 
-.project3 {
+.project3-background::before {
     background-image: url('../images/bankstatement-background.png');
-    background-size: cover;
 }
 
 .projects li {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
     font-size: 1.5rem;
     word-wrap: break-word;
     text-align: center;
-    width: 75vh;
-    height: 15vh;
-    background-color: lightgrey;
-    border-radius: 20px;
     padding: 10px;
+    background: lightgrey;
 }
 
 .projects a {
@@ -101,22 +129,13 @@ html, body {
     text-decoration: none;
 }
 
-.portfolio-dropdown-content {
+.dropdown-content {
     display: none;
     position: relative;
+    border: 1px solid black;
 }
 
-.checkedout-dropdown-content {
-    display: none;
-    position: relative; 
-}
-
-.bankstatement-dropdown-content {
-    display: none;
-    position: relative; 
-}
-
-.hovered-projects {
+.clicked-projects {
     display: block;
 }
 
