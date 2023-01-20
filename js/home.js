@@ -12,15 +12,15 @@ function right_nav () {
     });
 }
 
-// on hover/mouseover of projects, display the project info
-function hover_projects () {
-    const projects = document.querySelectorAll('.projects li');
-    const project_content = document.querySelectorAll('.projects div');
+// on click of projects, display the project info
+function click_projects () {
+    const projects = document.querySelectorAll('.backgrounds');
+    const project_content = document.querySelectorAll('.projects .dropdown-content');
 
     for (let i = 0; i < projects.length; i++) {
         projects[i].addEventListener('click', () => {
-            // add hovered-projects class to every <li>
-            project_content[i].classList.toggle('hovered-projects');
+            // add clicked-projects class to every <li>
+            project_content[i].classList.toggle('clicked-projects');
         });
         /*
         projects[i].addEventListener('mouseout', () => {
@@ -33,7 +33,7 @@ function hover_projects () {
 // calling all functions
 const home_page = function () {
     right_nav();
-    hover_projects();
+    click_projects();
 }
 
 home_page();
