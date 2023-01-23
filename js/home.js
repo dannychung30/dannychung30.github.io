@@ -22,11 +22,17 @@ function click_projects () {
             // add clicked-projects class to every <li>
             project_content[i].classList.toggle('clicked-projects');
         });
-        /*
-        projects[i].addEventListener('mouseout', () => {
-            // remove hovered-projects class to every <a>
-            project_content[i].classList.toggle('hovered-projects');
-        }); */
+    }
+}
+
+function close_displayed_projects () {
+    const close_buttons = document.querySelectorAll('.close-button');
+    const project_content = document.querySelectorAll('.projects .dropdown-content');
+
+    for (let i = 0; i < close_buttons.length; i++) {
+        close_buttons[i].addEventListener('click', () => {
+            project_content[i].classList.toggle('clicked-projects');
+        });
     }
 }
 
@@ -34,6 +40,7 @@ function click_projects () {
 const home_page = function () {
     right_nav();
     click_projects();
+    close_displayed_projects();
 }
 
 home_page();
