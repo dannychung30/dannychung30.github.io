@@ -7,6 +7,8 @@
 * {
     color: #EAEAEA;
     font-family: Montserrat;
+    text-rendering: optimizeLegibility; 
+    -webkit-font-smoothing: antialiased;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
