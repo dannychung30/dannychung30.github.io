@@ -4,6 +4,7 @@
 }
 
 * {
+    color: rgb(234, 234, 234);
     font-family: Montserrat;
     margin: 0px;
     padding: 0px;
@@ -11,7 +12,7 @@
 }
 
 html, body {
-    background: #D9D9D9;
+    background: #16213E;
 }
 
 #header {
@@ -41,7 +42,6 @@ html, body {
 
 #header a {
     font-weight: bold;
-    color: rgb(23, 23, 23);
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ html, body {
     border: solid;
     border-width: 1.5px;
     border-radius: 2px;
-    background-color: rgb(23, 23, 23);
+    background-color: #EAEAEA;
 }
 
 #hamburger {
@@ -61,12 +61,12 @@ html, body {
 
 .projects {
     display: flex;
+    margin-top: 10vh;
     flex-direction: column;
-    height: 80vh;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    column-gap: 20vh;
-    flex-wrap: wrap;
+    row-gap: 10vh;
     list-style: none;
 }
 
@@ -75,8 +75,8 @@ html, body {
     position: relative;
     width: 75vh;
     height: 15vh;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -108,20 +108,24 @@ html, body {
     background-image: url('../images/bankstatement-background.png');
 }
 
+.dropdown-img {
+    width: 50vh;
+}
+
 .projects li {
+    font-weight: bolder;
     display: flex;
     justify-content: center;
-    width: 50%;
-    left: 25%;
-    top: 25%;
+    align-items: center;
+    background-color: rgba(22, 33, 62, 0.8);
+    width: 100%;
+    height: 100%;
     z-index: 2;
     position: relative;
     cursor: pointer;
     font-size: 1.5rem;
     word-wrap: break-word;
     text-align: center;
-    padding: 10px;
-    background: lightgrey;
 }
 
 .projects a {
@@ -129,12 +133,50 @@ html, body {
     text-decoration: none;
 }
 
-.dropdown-content {
-    display: none;
-    position: relative;
-    border: 1px solid black;
+.github-link {
+    color: rgb(0, 110, 255);
 }
 
+.dropdown-content {
+    animation: 1s dropdown;
+    width: 75vh;
+    height: auto;
+    display: none;
+    position: relative;
+    margin-top: -50px;
+    padding: 20px;
+    background-color: #0F3460;
+    border-radius: 5px;
+}
+
+.dropdown-content * {
+    animation: 2s fadein, 2s dropdown;
+}
+
+.dropdown-content p {
+    overflow-x: hidden;
+}
+
+.close-button {
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(128, 128, 128, 0.403); 
+    cursor: pointer;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.close-button:hover {
+    background-color: rgba(74, 74, 74, 0.403);
+}
+
+/* toggled on click of project list */
 .clicked-projects {
     display: block;
 }
@@ -156,6 +198,17 @@ html, body {
     }
     to {
         opacity: 1;
+    }
+}
+
+/* slide in from top to bottom */
+
+@keyframes dropdown {
+    0% {
+        max-height: 0em;
+    }
+    100% {
+        max-height: 30em;
     }
 }
 
