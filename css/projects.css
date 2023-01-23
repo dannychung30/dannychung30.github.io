@@ -45,6 +45,11 @@ html, body {
     text-decoration: none;
 }
 
+hr {
+    border-top: #0F3460;
+    border-color: #0F3460;
+}
+
 #hamburger div {
     width: 22px;
     height: 1px;
@@ -71,7 +76,7 @@ html, body {
 }
 
 .backgrounds {
-    overflow: auto;
+    /* overflow: auto; */
     position: relative;
     width: 75vh;
     height: 15vh;
@@ -114,6 +119,7 @@ html, body {
 
 .projects li {
     font-weight: bolder;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +224,8 @@ html, body {
         width: 50%;
     }
     .projects li {
-        width: 50vh;
+        width: inherit;
+        height: inherit;
     }
 } 
 
@@ -228,19 +235,21 @@ html, body {
         overflow-x: hidden;
     }
     #nav {
+        z-index: 3;
         position: absolute;
         display: flex;
         flex-direction: column;
         right: 0px;
-        width: 50%;
-        height: 90vh;
+        width: 40%;
+        height: 30vh;
         top: 10vh;
-        backdrop-filter: blur(12px) saturate(95%);
-        -webkit-backdrop-filter: blur(12px) saturate(95%);
-        background-color: rgba(155, 155, 155, 0.67);
-        border: 1px solid rgba(209, 213, 219, 0.3);
+        background-color: #0F3460;
         transform: translateX(100%);
         transition: ease-in 0.3s;
+        border-radius: 3px;
+    }
+    #nav li {
+        animation: fadein 3s;
     }
     #hamburger {
         cursor: pointer;
@@ -249,14 +258,21 @@ html, body {
     .burgerclicked {
         transform: translateX(0%) !important;
     }
-    .fade-in-links {
-        animation: fadein 3s;
-    }
-    #nav li {
-        opacity: 0;
-        animation: fadein 5s;
+    .backgrounds {
+        overflow: hidden;
+        width: 40vh;
+        height: 10vh;
     }
     .projects li {
-        width: 20vh;
+        font-size: 15px;
+        width: inherit;
+        height: inherit;
+    }
+    .dropdown-content {
+        width: 40vh;
+        height: auto;
+    }
+    .dropdown-img {
+        width: 35vh;
     }
 }
