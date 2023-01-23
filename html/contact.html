@@ -10,40 +10,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header buttons -->
-    <nav id="header">
-        <div id="name">
-            <a href="../index.html">&lt;danny chung&gt;</a>
-        </div>
-        <ul id="nav">
-            <li id="home"><a href="../index.html">Home</a></li>
-            <li id="projects"><a href="projects.html">Projects</a></li>
-            <li id="contact"><a  href="contact.html">Contact</a></li>
-            <li id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/danny-chung-05378b1a1"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
-            <li id="github"><a target="_blank" href="https://github.com/dannychung30"><i class="fa-brands fa-square-github fa-xl"></i></a></li>
-        </ul>
-        <!-- Hamburger menu that shows up when viewing on mobile devices -->
-        <div id="hamburger">
-            <div id="line1"></div>
-            <div id="line2"></div>
-            <div id="line3"></div>
-        </div>
-    </nav>
-    <hr>
-    <div class="contact-info">
-        <form action="mailto:dannychung6158@gmail.com" method="POST" enctype="text/plain" class="contact-form">
-            <h1>Contact Me</h1></br>
-            <label>Name:</label>
-            <input id="full-name" type="text" name="full-name" placeholder="Full Name" required>
-            <label>Email:</label>
-            <input id="email" type="email" name="email" placeholder="email@gmail.com" required>
-            <label>Phone Number:</label>
-            <input id="phone-number" type="tel" name="phone-number" placeholder="999-999-9999">
-            <label>Message:</label>
-            <textarea style="height: 100px" name="message" placeholder="Message here"></textarea></br>
-            <button type="submit">Send</button>
-        </form>
+    <div class="site-wrapper">
+        <!-- Header buttons -->
+        <nav id="header">
+            <div id="name">
+                <a href="../index.html">&lt;danny chung&gt;</a>
+            </div>
+            <ul id="nav">
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li id="projects"><a href="projects.html">Projects</a></li>
+                <li id="contact"><a  href="contact.html">Contact</a></li>
+                <li id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/danny-chung-05378b1a1"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                <li id="github"><a target="_blank" href="https://github.com/dannychung30"><i class="fa-brands fa-square-github fa-xl"></i></a></li>
+            </ul>
+            <!-- Hamburger menu that shows up when viewing on mobile devices -->
+            <div id="hamburger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </nav>
+        <hr>
+        <div class="contact-info">
+            <form action="mailto:dannychung6158@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <h1>Contact Me</h1></br>
+                <label>Name:</label>
+                <input id="full-name" type="text" name="full-name" placeholder="Full Name" required>
+                <label>Email:</label>
+                <input id="email" type="email" name="email" placeholder="email@gmail.com" required>
+                <label>Phone Number:</label>
+                <input id="phone-number" type="tel" name="phone-number" placeholder="999-999-9999">
+                <label>Message:</label>
+                <textarea style="height: 100px" name="message" placeholder="Message here"></textarea></br>
+                <button type="submit">Send</button>
+            </form>
+        </div>   
+        <script type="text/javascript" src="../js/home.js"></script>
     </div>
-<script type="text/javascript" src="../js/home.js"></script>
 </body>
 </html>
