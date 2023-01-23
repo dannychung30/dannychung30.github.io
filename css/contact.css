@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.woff);
+}
+
+* {
+    color: rgb(234, 234, 234);
+    font-family: Montserrat;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #16213E;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    list-style: none;
+}
+
+#nav li:hover {
+    text-decoration: underline;
+}
+
+#header a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+hr {
+    border-top: #0F3460;
+    border-color: #0F3460;
+}
+
+#hamburger div {
+    width: 22px;
+    height: 1px;
+    margin-top: 3px;
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 2px;
+    background-color: #EAEAEA;
+}
+
+#hamburger {
+    display: none;
+}
+
+.contact-info {
+    height: 80vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 50vh;
+    height: 5vh;
+    background-color: #0F3460;
+    border: none;
+    padding: 8px;
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #0F3460;
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: 4px;
+    width: 15vh;
+    height: 5vh;
+}
+
+/* smaller than desktop, bigger than mobile views */
+@media screen and (max-width: 1300px) {
+    #nav {
+        width: 50%;
+    }
+    .projects li {
+        width: 50vh;
+    }
+} 
+
+/* for mobile views */
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    #nav {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0px;
+        width: 40%;
+        height: 30vh;
+        top: 10vh;
+        background-color: #0F3460;
+        transform: translateX(100%);
+        transition: ease-in 0.3s;
+        border-radius: 3px;
+    }
+    #nav li {
+        animation: fadein 3s;
+    }
+    #hamburger {
+        cursor: pointer;
+        display: block;
+    }
+    .burgerclicked {
+        transform: translateX(0%) !important;
+    }
+}
