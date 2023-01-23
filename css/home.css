@@ -115,7 +115,7 @@ svg {
 
 /* for mobile views */
 @media screen and (max-width: 800px) {
-    body {
+    .site-wrapper {
         overflow-x: hidden;
     }
     #nav {
