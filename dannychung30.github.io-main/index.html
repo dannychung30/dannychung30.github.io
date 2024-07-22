@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danny Chung's Portfolio Website">
+    <title>Danny Chung's Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- JS/jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script defer src="js/index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+</head>
+<body class="scrolling-to">
+    <div class="light-dark-toggle">
+        <button class="toggler"></button>
+        <i class="fa-solid fa-moon icons" tabindex="0" aria-label="Currently dark mode, click for light mode"></i>
+        <i class="fa-solid fa-sun icons" tabindex="0" aria-label="Currently light mode, click for dark mode"></i>
+    </div>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="name">
+                <a href="/" aria-label="Back to Homepage">&lt;danny chung&gt;</a>
+            </div>
+            <ul class="nav-bar">
+                <li class="nav-links">
+                    <a class="scrolling-links" href="javascript:void(0);">Home</a>
+                </li>
+                <li class="nav-links">
+                    <a class="scrolling-links" href="javascript:void(0);">Projects</a>
+                </li>
+                <li class="nav-links">
+                    <a class="scrolling-links" href="javascript:void(0);">Resume</a>
+                </li>
+                <li class="nav-links">
+                    <a class="scrolling-links" href="javascript:void(0);">Contact</a>
+                </li>
+                <li class="nav-links remove-after">
+                    <a href="https://www.linkedin.com/in/danny-chung-05378b1a1" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
+                </li>
+                <li class="nav-links remove-after">
+                    <a href="https://github.com/dannychung30" target="_blank" aria-label="Github">
+                        <i class="fa-brands fa-square-github fa-xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="home wrapper">
+            <section class="hero">
+                <section class="intro-msg">
+                    <h1>Hi, I'm Danny Chung.</h1>
+                    <h2>I am a Web Developer based in the Los Angeles, California area.</h2>
+                </section>
+                <div class="avatar-background">
+                    <img class="avatar" src="images/danny_avatar.svg" alt="" aria-hidden="true" />
+                </div>
+            </section>
+            <section class="wrapper">
+                <button class="continue-btn" aria-label="Continue down"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
+            </section>
+        </section>
+        <section class="scrolling-to projects" >
+            <h1>Projects</h1>
+            <article class="project portfolio">
+                <div class="wrapper">
+                    <div class="info">
+                        <h2>My Portfolio Website</h2>
+                        <p class="tech-used">
+                            HTML &#183; CSS &#183; JS &#183; JQUERY 
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="/images/portfolio-website-background.png" alt="" aria-hidden="true" loading="lazy" />
+                        <div class="img-overlay">
+                            <a href="https://github.com/dannychung30/dannychung30.github.io" target="_blank" aria-label="Github repo for Danny Chung's portfolio website project" title="Github repo for Danny Chung's portfolio website project">
+                                <i class="fa-brands fa-square-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project mentor-matcher">
+                <div class="wrapper">
+                    <div class="info">
+                        <h2>Mentor Matcher</h2>
+                        <p class="tech-used">
+                            HTML &#183; CSS &#183; JS &#183; REACTJS 
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="/images/mentor-matcher-background.png" alt="" aria-hidden="true" loading="lazy" />
+                        <div class="img-overlay">
+                            <a href="https://github.com/dannychung30/CIS490" target="_blank" aria-label="Github repo for Mentor Matcher project" title="Github repo for Mentor Matcher project">
+                                <i class="fa-brands fa-square-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project checked-out">
+                <div class="wrapper">
+                    <div class="info">
+                        <h2>CheckedOut</h2>
+                        <p class="tech-used">
+                            HTML &#183; CSS &#183; JS &#183; PHP &#183; MYSQL
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="/images/checkedout-background.png" alt="" aria-hidden="true" loading="lazy" />
+                        <div class="img-overlay">
+                            <a href="https://github.com/dannychung30/CheckedOut" target="_blank" aria-label="Github repo for Checked Out project" title="Github repo for Checked Out project">
+                                <i class="fa-brands fa-square-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project bank-statement-organizer">
+                <div class="wrapper">
+                    <div class="info">
+                        <h2>Bank Statement Organizer</h2>
+                        <p class="tech-used">
+                            PYTHON &#183; TKINTER
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="/images/bankstatement-background.png" alt="" aria-hidden="true" loading="lazy" />
+                        <div class="img-overlay">
+                            <a href="https://github.com/dannychung30/BankStatementOrganizer" target="_blank" aria-label="Github repo for Bank Statement Organizer project" title="Github repo for Bank Statement Organizer project">
+                                <i class="fa-brands fa-square-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="scrolling-to resume">
+            <div class="wrapper">
+                <h1>Checkout my resume</h1>
+                <div class="resume-img">
+                    <img src="/images/bankstatement-background.png" alt="" aria-hidden="true" loading="lazy" />
+                    <div class="img-overlay">
+                        <a href="" target="_blank" aria-label="Link opening in a new tab to a PDF of Danny Chung's resume" title="PDF of Danny Chung's resume">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scrolling-to contact">
+            <h1>Contact Me</h1>
+            <div class="wrapper">
+                <form class="contact-me-form" action="mailto:dannychung6158@gmail.com" enctype="text/plain">
+                    <div class="input-wrapper">
+                        <input type="text" id="full-name" name="full-name" required />
+                        <label for="full-name">Name</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="text" id="email" name="email" required />
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="text" id="phone-number" name="phone-number" />
+                        <label for="phone-number">Phone Number</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message" rows="5"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="main-footer">
+
+    </footer> -->
+</body>
+</html>
