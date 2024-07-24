@@ -166,7 +166,7 @@ button:focus {
 .main-nav > .container > .nav-bar > .nav-links.active > a::after {
     content: "";
     display: block;
-    height: 1.5px;
+    height: 2px;
     position: absolute;
     left: 50%;
     bottom: -3px;
