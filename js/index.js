@@ -3,7 +3,6 @@
 */
 const toggler = $(".light-dark-toggle");
 toggler.on("click", function() {
-    $(this).toggleClass("dark-mode-toggled");
     $(this).children(".toggler").toggleClass("dark-mode-toggled");
 });
 
