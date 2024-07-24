@@ -1,9 +1,10 @@
 /*
     Light-dark-mode toggle switch
 */
-const toggler = $(".light-dark-toggle > .toggler");
+const toggler = $(".light-dark-toggle");
 toggler.on("click", function() {
-    $(this).toggleClass("toggled");
+    $(this).toggleClass("dark-mode-toggled");
+    $(this).children(".toggler").toggleClass("dark-mode-toggled");
 });
 
 /*
