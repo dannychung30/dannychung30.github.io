@@ -1,3 +1,13 @@
+$(document).ready(function() {
+    // Check if user had light or dark mode toggled before
+    if (localStorage.getItem("colorMode") === "light") {
+        $("html").data("color-mode", "light");
+    } else {
+        $("html").data("color-mode", "dark");
+    }
+});
+
+
 /*
     Light-dark-mode toggle switch
 */
