@@ -60,21 +60,34 @@ button:focus {
     border-radius: 25px;
     z-index: 1;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.light-dark-toggle.dark-mode-toggled {
+    background-color: var(--dark-mode-html-background-color);
 }
 
 .light-dark-toggle > .toggler {
     position: absolute;
+    right: 99%;
+    transform: translateX(99%);
     width: 40px;
     height: 100%;
+    background-color: var(--light-mode-html-background-color);
     box-shadow: none;
     border: 4px solid var(--dark-mode-html-background-color);
     border-radius: 50%;
     z-index: 1;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
 }
 
-.light-dark-toggle > .toggler.toggled {
+.light-dark-toggle > .toggler.dark-mode-toggled {
     right: 0;
+    transform: none;
+    background-color: #808080;
+    border-color: var(--dark-mode-html-background-color);
 }
 
 .light-dark-toggle > .icons {
@@ -88,6 +101,8 @@ button:focus {
 
 .light-dark-toggle > .fa-sun {
     right: 10px;
+    color: #F5AF47;
+    text-shadow: 0px 0px 2px #F5AF47;
 }
 
 .light-dark-toggle > .fa-moon {
