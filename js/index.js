@@ -1,20 +1,31 @@
+// Getting global variables
+const toggler = $(".light-dark-toggle");
+
 $(document).ready(function() {
-    // Check if user had light or dark mode toggled before
+    // Check if user had light or dark mode toggled before and set appropriately
     if (localStorage.getItem("colorMode") === "light") {
-        $("html").data("color-mode", "light");
+        $("html").attr("data-color-mode", "light");
     } else {
-        $("html").data("color-mode", "dark");
+        $("html").attr("data-color-mode", "dark");
+        toggler.children(".toggler").addClass("dark-mode-toggled");
     }
 });
 
-
 /*
-    Light-dark-mode toggle switch
+    Set the light and dark mode 
 */
-const toggler = $(".light-dark-toggle");
-toggler.on("click", function() {
-    $(this).children(".toggler").toggleClass("dark-mode-toggled");
-});
+toggler.on("click", lightDarkMode);
+function lightDarkMode() {
+    if ($("html").attr("data-color-mode") === "light") {
+        toggler.children(".toggler").addClass("dark-mode-toggled");
+        localStorage.setItem("colorMode", "dark");
+        $("html").attr("data-color-mode", "dark");
+    } else {
+        toggler.children(".toggler").removeClass("dark-mode-toggled");
+        localStorage.setItem("colorMode", "light")
+        $("html").attr("data-color-mode", "light");
+    }
+}
 
 /*
     Animating the window scroll when clicking on the navigation bar links
