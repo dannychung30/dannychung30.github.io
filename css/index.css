@@ -29,11 +29,18 @@ html[data-color-mode="light"] {
     --html-background-color: #F2F3F4;
     --font-color: #181818;
     --button-box-shadow-color: #181818;
+    --avatar-background-color: #F5D870;
 }
 
 html[data-color-mode="dark"] {
     --html-background-color: #181818;
     --font-color: #F2F3F4;
+    --button-box-shadow-color: #F2F3F4;
+    --avatar-background-color: #A38000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--font-color);
 }
 
 a {
@@ -212,7 +219,7 @@ main .scrolling-to {
 /* HERO START */
 
 .avatar-background {
-    background-color: #f5d870;
+    background-color: var(--avatar-background-color);
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
