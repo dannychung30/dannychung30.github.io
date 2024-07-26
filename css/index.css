@@ -23,20 +23,36 @@ body, html {
     margin: 0;
     padding: 0;
     scrollbar-gutter: stable;
+
+    transition: all 0.2s ease-out;
 }
 
 html[data-color-mode="light"] {
     --html-background-color: #F2F3F4;
     --font-color: #181818;
+    --nav-box-shadow-color: rgba(0, 0, 0, 0.25);
+    --nav-background-color: rgba(242, 243, 244, 0.8);
     --button-box-shadow-color: #181818;
     --avatar-background-color: #F5D870;
+    --avatar-box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    --toggle-border-color: #181818;
+    --card-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    --even-project-background: #EAE9E6;
+    --form-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 html[data-color-mode="dark"] {
     --html-background-color: #181818;
-    --font-color: #F2F3F4;
+    --font-color: #e5e5e5;
+    --nav-box-shadow-color: rgba(0, 0, 0, 1);
+    --nav-background-color: rgba(24, 24, 24, 0.8);
     --button-box-shadow-color: #F2F3F4;
-    --avatar-background-color: #A38000;
+    --avatar-background-color: #E9C649;
+    --avatar-box-shadow: 0px 4px 12px 3px #000;
+    --toggle-border-color: #F2F3F4;
+    --card-box-shadow: 0px 5px 20px 10px #000;
+    --even-project-background: #22201E;
+    --form-box-shadow: 0px 0px 10px 3px #000;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -72,6 +88,7 @@ button:focus {
     width: 90px;
     height: 40px;
     background-color: #181818;
+    border: 2px solid var(--toggle-border-color);
     border-radius: 25px;
     z-index: 1;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -128,13 +145,13 @@ button:focus {
     top: 0;
     z-index: 99;
     padding: 24px 0;
-    background-color: rgba(242, 243, 244, 0.8);
+    background-color: var(--nav-background-color);
     backdrop-filter: blur(15px);
-    transition: box-shadow 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .main-nav.scrolled-into-page {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px var(--nav-box-shadow-color);
 }
 
 .main-nav > .container {
@@ -222,7 +239,7 @@ main .scrolling-to {
     background-color: var(--avatar-background-color);
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--avatar-box-shadow);
 }
 
 .avatar-background > .avatar {
@@ -261,7 +278,7 @@ main > .home > .hero {
 }
 
 .continue-btn:active {
-    box-shadow: 3px 3px;
+    box-shadow: 3px 3px var(--button-box-shadow-color);
     top: 3px;
     right: 2px;
 }
@@ -283,7 +300,7 @@ main .scrolling-to.projects {
 }
 
 .projects .project:nth-child(even) {
-    background-color: #eae9e6;
+    background-color: var(--even-project-background);
 }
 
 .projects .project > .wrapper {
@@ -307,7 +324,7 @@ main .scrolling-to.projects {
     max-width: 100%;
     max-height: 100%;
     border-radius: 5px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--card-box-shadow);
 }
 
 .projects .project .project-img > img {
@@ -365,7 +382,7 @@ main .contact .contact-me-form {
     row-gap: 1em;
     padding: 4em;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--form-box-shadow);
 }
 
 .contact .contact-me-form > .input-wrapper {
@@ -453,7 +470,7 @@ main .resume {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--card-box-shadow);
 }
 
 .resume .resume-img > img {
