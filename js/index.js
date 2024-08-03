@@ -5,9 +5,11 @@ $(document).ready(function() {
     // Check if user had light or dark mode toggled before and set appropriately
     if (localStorage.getItem("colorMode") === "light") {
         $("html").attr("data-color-mode", "light");
+        toggler.children(".toggler").attr("aria-label", "Toggle dark mode");
     } else {
         $("html").attr("data-color-mode", "dark");
         toggler.children(".toggler").addClass("dark-mode-toggled");
+        toggler.children(".toggler").attr("aria-label", "Toggle light mode");
     }
 });
 
@@ -18,10 +20,12 @@ toggler.on("click", lightDarkMode);
 function lightDarkMode() {
     if ($("html").attr("data-color-mode") === "light") {
         toggler.children(".toggler").addClass("dark-mode-toggled");
+        toggler.children(".toggler").attr("aria-label", "Toggle light mode");
         localStorage.setItem("colorMode", "dark");
         $("html").attr("data-color-mode", "dark");
     } else {
         toggler.children(".toggler").removeClass("dark-mode-toggled");
+        toggler.children(".toggler").attr("aria-label", "Toggle dark mode");
         localStorage.setItem("colorMode", "light")
         $("html").attr("data-color-mode", "light");
     }
