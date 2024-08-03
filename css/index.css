@@ -353,7 +353,7 @@ main .scrolling-to.projects {
     transition: all 0.2s ease-in-out;
 }
 
-.projects .project .project-img:hover .img-overlay {
+.projects .project :is(.project-img:hover, .project-img:focus) .img-overlay {
     top: 0;
     opacity: 1;
     visibility: visible;
@@ -497,7 +497,7 @@ main .resume {
     transition: all 0.2s ease-in-out;
 }
 
-.resume .resume-img:hover .img-overlay {
+.resume :is(.resume-img:hover, .resume-img:focus) .img-overlay {
     top: 0;
     opacity: 1;
     visibility: visible;
