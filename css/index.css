@@ -266,6 +266,22 @@ main > .home > .hero {
     font-weight: 500;
 }
 
+.hero .quick-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    padding: 0;
+}
+
+.hero .quick-links > li {
+    list-style: none;
+}
+
+.quick-links > li > a {
+    color: var(--font-color);
+    font-size: 1.5em;
+}
+
 /* HERO END */
 
 .continue-btn {
