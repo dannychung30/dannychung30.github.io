@@ -14,6 +14,11 @@
     --max-content-width: 1100px;
     --light-mode-link-color: #375db2;
     --button-color: #86A789;
+    --gutter: 25px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body, html {
@@ -157,8 +162,10 @@ button:focus {
 }
 
 .main-nav > .container {
-    max-width: var(--max-content-width);
+    width: calc(var(--max-content-width) + (2 * var(--gutter)));
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 var(--gutter);
     display: flex;
     justify-content: flex-end;
     justify-content: end;
@@ -218,10 +225,10 @@ button:focus {
 /* NAVIGATION END */
 
 main .wrapper {
-    max-width: var(--max-content-width);
-    width: 100%;
+    max-width: 100%;
+    width: calc(var(--max-content-width) + (2 * var(--gutter)));
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 var(--gutter);
 }
 
 main .home {
@@ -240,6 +247,7 @@ main .scrolling-to {
 
 .avatar-background {
     background-color: var(--avatar-background-color);
+    aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--avatar-box-shadow);
@@ -255,6 +263,10 @@ main > .home > .hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.hero > .intro-msg {
+    text-align: center;
 }
 
 .hero > .intro-msg > h1 {
@@ -348,6 +360,7 @@ main .scrolling-to.projects {
 
 .projects .project .project-img > img {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center top;;
@@ -525,3 +538,79 @@ main .resume {
 }
 
 /* RESUME END */
+
+@media screen and (max-width: 1023px) {
+    main .home {
+        row-gap: 5em;
+    }
+
+    main > .home > .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero > .intro-msg {
+        padding: 1em 0 0 0;
+    }
+
+    .projects .project {
+        padding: 2em 0 3em;
+    }
+
+    .project .info, .projects .project:nth-child(odd) .info {
+        text-align: center;
+    }
+
+    .projects .project > .wrapper, .projects .project:nth-child(odd) > .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .project .project-img > .img-overlay, .projects .project :is(.project-img:hover, .project-img:focus) .img-overlay {
+        top: 0;
+        opacity: 0;
+        visibility: visible;
+    }
+
+    .projects .project .img-overlay > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --gutter: 15px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    main .home {
+        margin: 1em 0 0 0;
+        row-gap: 1em;
+        height: calc(100vh - 90px);
+    }
+
+    .avatar-background > .avatar {
+        width: 200px;
+    }
+
+    .hero > .intro-msg > h1 {
+        font-size: 2.5em;
+    }
+
+    main .contact .contact-me-form {
+        width: 100%;
+        padding: 2.5em;
+    }
+
+    .contact .contact-me-form > .input-wrapper {
+        width: 100%;
+    }
+
+    .contact .contact-me-form > .input-wrapper > :is(input, textarea) {
+        width: 100%;
+    }
+}
