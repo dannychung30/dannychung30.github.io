@@ -316,6 +316,10 @@ main > .home > .hero {
     right: 2px;
 }
 
+.continue-btn .fa-arrow-down {
+    color: inherit;
+}
+
 /* PROJECTS START */
 
 main .scrolling-to.projects {
