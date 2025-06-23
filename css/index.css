@@ -410,7 +410,24 @@ main .contact {
 
 main .contact > .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-methods {
+    display: flex;
+    font-size: 2em;
+}
+
+.contact-methods a {
+    display: inline-block;
+    padding: 0 0.5em;
+    /* text-decoration: none; */
+    color: var(--font-color);
+}
+
+.contact-methods a:not(:last-child) {
+    border-right: 2px solid var(--font-color);
 }
 
 main .contact .contact-me-form {
