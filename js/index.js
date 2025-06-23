@@ -86,3 +86,12 @@ form_inputs.each(function() {
         }
     })
 });
+
+/*
+    Adding form input values into the email body
+*/
+const contactForm = $(".contact-me-form");
+$(`.contact-me-form input[type="submit"]`).click( function(e) {
+    e.preventDefault();
+    location.href = "mailto:dannychung6158@gmail.com?body=" + contactForm["full-name"] + "\n" + contactForm.email + "\n" + contactForm["phone-number"] + "\n\n" + contactForm.message;
+});
