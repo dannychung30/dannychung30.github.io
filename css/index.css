@@ -332,6 +332,10 @@ main .scrolling-to.projects {
     margin-top: 0;
 }
 
+.projects h2 .ip {
+    font-size: 0.5em;
+}
+
 .projects .project {
     padding: 2em 0;
 }
@@ -351,6 +355,10 @@ main .scrolling-to.projects {
 
 .projects .project:nth-child(odd) .info {
     text-align: right;
+}
+
+.projects .tech-used {
+    text-transform: uppercase;
 }
 
 .projects .project .project-img {
