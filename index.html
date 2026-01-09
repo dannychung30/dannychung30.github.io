@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-color-mode="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,207 +12,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css" />
 
     <!-- JS/jQuery -->
-    <script src="js/jquery-3.7.1.min.js"></script>
     <script defer src="js/index.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
+
 <body class="scrolling-to">
-    <div class="light-dark-toggle">
-        <button class="toggler"></button>
-        <i class="fa-solid fa-moon icons" tabindex="0"></i>
-        <i class="fa-solid fa-sun icons" tabindex="0"></i>
-    </div>
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav-bar">
-                <li class="nav-links">
-                    <a class="scrolling-links" href="javascript:void(0);">Home</a>
-                </li>
-                <li class="nav-links">
-                    <a class="scrolling-links" href="javascript:void(0);">Projects</a>
-                </li>
-                <li class="nav-links" style="display: none;">
-                    <a class="scrolling-links" href="javascript:void(0);">Resume</a>
-                </li>
-                <li class="nav-links">
-                    <a class="scrolling-links" href="javascript:void(0);">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <main>
-        <section class="home wrapper">
-            <div class="hero">
-                <section class="intro-msg">
-                    <h1>Hi, I'm Danny Chung</h1>
-                    <h2>I am a Web Developer based in the Los Angeles, California area.</h2>
-                    <ul class="quick-links">
-                        <li>
-                            <a href="https://www.linkedin.com/in/dannydchung" target="_blank" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/dannychung30" target="_blank" aria-label="Github">
-                                <i class="fa-brands fa-square-github fa-xl"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <div class="avatar-background">
-                    <img class="avatar" src="images/danny_avatar.svg" alt="" aria-hidden="true" />
-                </div>
-            </div>
-            <div class="wrapper">
-                <button class="continue-btn" aria-label="Continue down"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
-            </div>
-        </section>
-        <section class="scrolling-to projects" >
-            <h1>Projects</h1>
-            <article class="project wishly">
-                <div class="wrapper">
-                    <section class="info">
-                        <h2>Wishly <span class="ip">(In progress)</span></h2>
-                        <p class="tech-used">
-                            React &#183; Firebase Firestore &#183; Firebase Authentication
-                        </p>
-                    </section>
-                    <div class="project-img">
-                        <img src="/images/wishly-background.png" alt="" aria-hidden="true" loading="lazy" />
-                        <div class="img-overlay" style="display: none;">
-                            <a href="https://github.com/dannychung30/dannychung30.github.io" target="_blank" aria-label="Github repo for Danny Chung's portfolio website project" title="Github repo for Danny Chung's portfolio website project">
-                                <i class="fa-brands fa-square-github fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="project portfolio">
-                <div class="wrapper">
-                    <section class="info">
-                        <h2>Tenzi Game</h2>
-                        <p class="tech-used">
-                            HTML &#183; CSS &#183; React
-                        </p>
-                    </section>
-                    <div class="project-img">
-                        <img src="/images/tenzi-game-background.jpeg" alt="" aria-hidden="true" loading="lazy" />
-                        <div class="img-overlay">
-                            <a href="https://github.com/dannychung30/tenzies" target="_blank" aria-label="Github repo for Tenzi Game project" title="Github repo for Danny Chung's portfolio website project">
-                                <i class="fa-brands fa-square-github fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="project portfolio">
-                <div class="wrapper">
-                    <section class="info">
-                        <h2>My Portfolio Website</h2>
-                        <p class="tech-used">
-                            HTML &#183; CSS &#183; JavaScript &#183; jQuery 
-                        </p>
-                    </section>
-                    <div class="project-img">
-                        <img src="/images/portfolio-website-background.png" alt="" aria-hidden="true" loading="lazy" />
-                        <div class="img-overlay">
-                            <a href="https://github.com/dannychung30/dannychung30.github.io" target="_blank" aria-label="Github repo for Danny Chung's portfolio website project" title="Github repo for Danny Chung's portfolio website project">
-                                <i class="fa-brands fa-square-github fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="project mentor-matcher">
-                <div class="wrapper">
-                    <section class="info">
-                        <h2>Mentor Matcher</h2>
-                        <p class="tech-used">
-                            HTML &#183; CSS &#183; JavaScript &#183; React 
-                        </p>
-                    </section>
-                    <div class="project-img">
-                        <img src="/images/mentor-matcher-background.png" alt="" aria-hidden="true" loading="lazy" />
-                        <div class="img-overlay">
-                            <a href="https://github.com/dannychung30/CIS490" target="_blank" aria-label="Github repo for Mentor Matcher project" title="Github repo for Mentor Matcher project">
-                                <i class="fa-brands fa-square-github fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="project checked-out">
-                <div class="wrapper">
-                    <section class="info">
-                        <h2>CheckedOut</h2>
-                        <p class="tech-used">
-                            HTML &#183; CSS &#183; JavaScript &#183; PHP &#183; MySQL
-                        </p>
-                    </section>
-                    <div class="project-img">
-                        <img src="/images/checkedout-background.png" alt="" aria-hidden="true" loading="lazy" />
-                        <div class="img-overlay">
-                            <a href="https://github.com/dannychung30/CheckedOut" target="_blank" aria-label="Github repo for Checked Out project" title="Github repo for Checked Out project">
-                                <i class="fa-brands fa-square-github fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="scrolling-to resume" style="display: none;">
-            <div class="wrapper">
-                <h1>Checkout my resume</h1>
-                <div class="resume-img">
-                    <img src="" alt="" aria-hidden="true" loading="lazy" />
-                    <div class="img-overlay">
-                        <a href="" target="_blank" aria-label="Link opening in a new tab to a PDF of Danny Chung's resume" title="PDF of Danny Chung's resume">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="scrolling-to contact">
-            <!-- <h1>Contact Me</h1> -->
-            <div class="wrapper">
-                <form class="contact-me-form" enctype="text/plain" style="display: none;">
-                    <div class="input-wrapper">
-                        <input type="text" id="full-name" name="full-name" required />
-                        <label for="full-name">Name</label>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <input type="text" id="email" name="email" required />
-                        <label for="email">Email</label>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <input type="text" id="phone-number" name="phone-number" />
-                        <label for="phone-number">Phone Number</label>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <textarea id="message" name="message" rows="5"></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <input type="submit" value="Send" />
-                </form>
-                <h1>Contact Me</h1>
-                <div class="contact-methods">
-                    <a href="mailto:dannychung6158@gmail.com" aria-label="Email me">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dannydchung" target="_blank" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+        <h1>Under construction</h1>
+        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg width="50" height="50" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke: #181818;
+                        stroke-miterlimit: 10;
+                        stroke-width: 1.91px;
+                    }
+                </style>
+            </defs>
+            <rect class="cls-1" x="6.6" y="9.98" width="10.8" height="4.05"
+                transform="translate(-4.97 12) rotate(-45)" />
+            <circle class="cls-1" cx="18.68" cy="5.32" r="3.82" />
+            <circle class="cls-1" cx="5.32" cy="18.68" r="3.82" />
+            <path class="cls-1"
+                d="M12,9.14,9.14,12,6.27,9.14H4.36A2.87,2.87,0,0,1,1.5,6.27V4.36l.4.4A2.1,2.1,0,0,0,4.69,5a2,2,0,0,0,.15-3L4.36,1.5H6.27A2.87,2.87,0,0,1,9.14,4.36V6.27Z" />
+            <path class="cls-1"
+                d="M19.64,14.86a2.87,2.87,0,0,1,2.86,2.87v1.91l-.4-.4A2.1,2.1,0,0,0,19.31,19a2,2,0,0,0-.15,3l.48.48H17.73a2.87,2.87,0,0,1-2.87-2.86V17.73L12,14.86,14.86,12l2.87,2.86Z" />
+        </svg>
     </main>
 </body>
+
 </html>
